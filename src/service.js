@@ -59,6 +59,7 @@ module.exports = class Service {
     const { text, images } = await this.getHandbook();
     const handbook = text[0];
     this.memory += message;
+    if (this.memory.length > 1000) this.memory = this.memory.slice(1000);
     const chatCompletion = await groq.chat.completions.create({
       messages: [
         {
@@ -104,6 +105,7 @@ module.exports = class Service {
     const { text, images } = await this.getHandbook();
     const handbook = text[1];
     this.memory += message;
+    if (this.memory.length > 1000) this.memory = this.memory.slice(1000);
     const chatCompletion = await groq.chat.completions.create({
       messages: [
         {
