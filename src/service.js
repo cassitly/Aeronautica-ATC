@@ -55,16 +55,16 @@ module.exports = class Service {
     };
   }
 
-  async getService(message) {
+  async getService(message, author) {
     const { text, images } = await this.getHandbook();
     const handbook = text[0];
-    this.memory += message;
+    this.memory += author + message;
     if (this.memory.length > 1000) this.memory = this.memory.slice(1000);
     const chatCompletion = await groq.chat.completions.create({
       messages: [
         {
           role: 'system',
-          content: `You are an ATC controller for Aeronautica. The user will be the pilots, you are guiding. This is your handbook: \n${handbook}`,
+          content: `You are an ATC controller for Aeronautica. You are to give short and concise responses. The user will be the pilots, you are guiding. This is your handbook: \n${handbook}`,
         },
         {
           role: 'function',
@@ -75,10 +75,12 @@ module.exports = class Service {
         },
         {
             role: 'user',
+            name: 'Cassitly',
             content: `A quick note before I give you ATIS info, if the info says "No current ATIS information. Please wait for someone to input ATIS", just ignore it. No one has given you ATIS yet, so just continue without it.\nThis is the current ATIS information: \n${this.atis}`,
         },
         {
           role: 'user',
+          name: 'Cassitydev',
           content: [
             { type: 'text', text: 'This is the map of the game, Aeronautica.' },
             {
@@ -91,6 +93,7 @@ module.exports = class Service {
         },
         {
           role: 'user',
+          name: author,
           content: message,
         },
       ],
@@ -101,16 +104,16 @@ module.exports = class Service {
     return chatCompletion.choices[0].message.content;
   }
 
-  async instructPilot(message) {
+  async instructPilot(message, author) {
     const { text, images } = await this.getHandbook();
     const handbook = text[1];
-    this.memory += message;
+    this.memory += author + message;
     if (this.memory.length > 1000) this.memory = this.memory.slice(1000);
     const chatCompletion = await groq.chat.completions.create({
       messages: [
         {
           role: 'system',
-          content: `You are a pilot instructor, and you have a pilot handbook to instruct pilots and answer their questions. This is your handbook: \n${handbook}`,
+          content: `You are a pilot instructor, and you have a pilot handbook to instruct pilots and answer their questions. You are to give short and concise reponses. This is your handbook: \n${handbook}`,
         },
         {
           role: 'function',
@@ -121,10 +124,12 @@ module.exports = class Service {
         },
         {
             role: 'user',
+            name: 'Cassitly',
             content: `A quick note before I give you ATIS info, if the info says "No current ATIS information. Please wait for someone to input ATIS", just ignore it. No one has given you ATIS yet, so just continue without it.\nThis is the current ATIS information: \n${this.atis}`,
         },
         {
           role: 'user',
+          name: "Cassitydev",
           content: [
             { type: 'text', text: 'This is the map of the game, Aeronautica.' },
             {
@@ -137,6 +142,7 @@ module.exports = class Service {
         },
         {
           role: 'user',
+          name: author,
           content: message,
         },
       ],

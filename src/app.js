@@ -111,7 +111,7 @@ async function discord() {
     
             await message.channel.send(`You said: **${transcription}**`);
     
-            const reply = await app.getService(transcription);
+            const reply = await app.getService(transcription, message.author.username);
             await message.channel.send(`Groq: ${reply}`);
                 
             // Convert Groq response to speech
@@ -161,9 +161,9 @@ async function discord() {
                 try {
                     let result;
                     if (type === 'atc') {
-                        result = await app.getService(response.content);
+                        result = await app.getService(response.content, message.author.username);
                     } else if (type === 'instructor') {
-                        result = await app.instructPilot(response.content);
+                        result = await app.instructPilot(response.content, message.author.username);
                     } else if (type === 'atis') {
                         app.setATIS(response.content)
                         result = 'ATIS updated.';
