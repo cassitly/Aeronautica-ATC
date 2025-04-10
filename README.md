@@ -7,11 +7,11 @@ GROQ_API_KEY=GROQ_API_TOKEN
 TOKEN=DISCORD_BOT_TOKEN
 ```
 
-Replace the example variables, (aka GROQ_API_TOKEN, and DISCORD_BOT_TOKEN), with their actual tokens. For the discord bot token, go to [Discord.com](https://discord.com/developers/applications/), and create a new application. And create a discord bot, following their guide [here](https://www.google.com/search?q=how+to+make+a+discord+bot&oq=how+to+make+a+discord+bot&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI4NjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8]
+Replace the example variables, (aka GROQ_API_TOKEN, and DISCORD_BOT_TOKEN), with their actual tokens. For the discord bot token, go to [Discord.com](https://discord.com/developers/applications/), and create a new application. And create a discord bot, following their guide [here](https://www.google.com/search?q=how+to+make+a+discord+bot&oq=how+to+make+a+discord+bot&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI4NjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
 Then go to bots, and reset the token, and copy your bot token. Replace DISCORD_BOT_TOKEN, with your actual bot token.
 
 And then for GROQ_API_TOKEN, go to [Groq.com](https://console.groq.com/keys) and sign up, then get your free API and replace GROQ_API_TOKEN, with the actual key you just got.
-And then run ``npm install`` on the root directory, with [Command Prompt](https://www.google.com/search?q=windows+command+prompt&oq=Windows+command+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIMCAgQABgUGIcCGIAEMgcICRAAGIAE0gEIMTk5MGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8๗
+And then run ``npm install`` on the root directory, with [Command Prompt](https://www.google.com/search?q=windows+command+prompt&oq=Windows+command+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIMCAgQABgUGIcCGIAEMgcICRAAGIAE0gEIMTk5MGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8)
 After that, run ``node .`` and then write ``discord`` in the option that should be like this:
 ```cmd
 (node:18704) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
