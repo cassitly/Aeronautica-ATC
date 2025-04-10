@@ -31,6 +31,10 @@ async function discord() {
                 currentCommand = 'instructor';
                 await message.channel.send('Entering Instructor mode. Type `>exit` to return.');
                 await handleSubcommand(message, currentCommand);
+            } else if (command === 'atis') {
+                currentCommand = 'atis';
+                await message.channel.send('Entering ATIS mode. Type `>exit` to return.');
+                await handleSubcommand(message, currentCommand);
             } else {
                 message.channel.send('Unknown command. Use `::atc`, `::instructor`, or `::exit`.');
             }
@@ -39,7 +43,7 @@ async function discord() {
 
     async function handleSubcommand(message, type) {
         const filter = response => response.author.id === message.author.id;
-        const collector = message.channel.createMessageCollector({ filter, time: 60000 });
+        const collector = message.channel.createMessageCollector({ filter, time: 6000000 });
 
         collector.on('collect', async (response) => {
             if (response.content === 'exit' || response.content === '>exit') {
@@ -53,6 +57,9 @@ async function discord() {
                         result = await app.getService(response.content);
                     } else if (type === 'instructor') {
                         result = await app.instructPilot(response.content);
+                    } else if (type === 'atis') {
+                        app.setATIS(response.content)
+                        result = 'ATIS updated.';
                     }
                     message.channel.send(result || 'Command executed successfully.');
                 } catch (err) {

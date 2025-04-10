@@ -12,6 +12,7 @@ const groq = new Groq({
 module.exports = class Service {
   constructor() {
     this.memory = '';
+    this.atis = 'No current ATIS information. Please wait for someone to input ATIS';
   }
 
   async getHandbook() {
@@ -72,6 +73,10 @@ module.exports = class Service {
           }),
         },
         {
+            role: 'user',
+            content: `A quick note before I give you ATIS info, if the info says "No current ATIS information. Please wait for someone to input ATIS", just ignore it. No one has given you ATIS yet, so just continue without it.\nThis is the current ATIS information: \n${this.atis}`,
+        },
+        {
           role: 'user',
           content: [
             { type: 'text', text: 'This is the map of the game, Aeronautica.' },
@@ -113,6 +118,10 @@ module.exports = class Service {
           }),
         },
         {
+            role: 'user',
+            content: `A quick note before I give you ATIS info, if the info says "No current ATIS information. Please wait for someone to input ATIS", just ignore it. No one has given you ATIS yet, so just continue without it.\nThis is the current ATIS information: \n${this.atis}`,
+        },
+        {
           role: 'user',
           content: [
             { type: 'text', text: 'This is the map of the game, Aeronautica.' },
@@ -134,6 +143,10 @@ module.exports = class Service {
 
     this.memory += chatCompletion.choices[0].message.content;
     return chatCompletion.choices[0].message.content;
+  }
+
+  async setATIS(info) {
+    this.atis = info; // Sets the info
   }
 };
 
