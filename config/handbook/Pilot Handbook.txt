@@ -1,0 +1,219 @@
+﻿Pilot Handbook
+
+Welcome Note
+
+Welcome to Aeronautica Traffic Control! We have put together the highest level of both realism,
+and entertainment for you within the Aeronautica Community! This document has been tailored
+for the brand new pilots with us, this will serve to help you get the absolute basics down before
+you join your first event! Please note, this is not a mandatory read, it is meant to help those with
+minimal experience with aviation enjoy this community! We encourage all levels of experience to
+join, and fly, with us. From those with zero, to those that make it their career. We welcome you
+to Aeronautica Traffic Control!
+
+TABLE OF CONTENTS
+Pg. 3-4 General Knowledge
+Pg. 5-6 FAA Phraseology
+Pg. 7 ICAO Phraseology
+Pg. 8 CAA Phraseology
+
+General Knowledge
+These are things that are constant across every control area in Aeronautica.
+
+
+● ATIS
+○ Automated Terminal Information System. Gives pilots basic weather information,
+and necessary information about the airport including active runways, runway
+and taxiway closures. They are updated every hour, on the 55th minute. We use
+the Phonetic Alphabet, Alpha Bravo…etc. UNLESS weather changes drastically.
+● CONTROL ZONES
+NOTE - Aeronautica Traffic Control utilizes the Top Down system. This means that from
+APP/DEP and down, you must control every other spot. Center is not listed on this, as
+Center is incredibly complex and it is difficult for controllers to control every airport
+Entirely
+○ ARTCC/CTR
+■ Known as “Center”. They control the overlying airspace for an entire
+region. They are huge in scope, and require constant concentration in
+order to work effectively
+● Contacting Center is simple. You give your callsign, altitude, and
+general position. “Empire Center, N73UF is flight Level 500, 15
+miles east of the Harden Airport, direct Lynwood”
+○ Approach/Departure
+■ 20 nm-10 nm from the airfield. Normally these are around larger airports,
+and help vector aircraft onto the final approach leg of their journey
+● Contacting Approach, normally you will be handed to approach
+from either Center, or Tower. You will contact approach similarly to
+how you contacted the Center. Example, “Clarence Approach,
+N73UF is 20 miles from Clarence, requesting ILS runway 36”
+○ Tower
+■ Runway + 5 nm -10 nm from the airfield. These help bring aircraft from
+the final approach fix (FAF) to the runway safely. They also space out
+departures, and work VFR aircraft within their control zone.
+● Following the theme, you will call tower similarly to how you’ve
+contacted the previous. “Clarence Tower, N73UF, 10 mile final
+runway 36, on the ILS.”
+○ Ground
+■ The airport environment. These controllers help bring aircraft from the
+ramp safely to the runway for departure, or from the runway to the ramp.
+● Example to contact ground, “Clarence Ground, N73UF, we are off
+of runway 36 at Romeo. Requesting taxi to the gate.”
+○ Note, you do not have to have a specific gate in mind, but
+it is recommended for the highest level of realism.
+○ Delivery
+■ This is a very rarely seen position in aeronautica. These controllers simply
+deliver IFR clearances to aircraft. They have no ability to move aircraft.
+● You will only ever contact delivery if there is a massive amount of
+aircraft. Example: “Clarence delivery, N73UF, requesting IFR to
+Lynwood. GPS Direct.”
+● READBACKS
+○ Readbacks are simply reading back what the controller has told you.
+○ What do I need to read back?
+■ You must read back the following
+● VFR and IFR clearances
+● Clearance to takeoff and land
+○ Wind information and runway condition not required to
+Readback
+● Climb and descend instructions
+● Speed restrictions
+○ TLDR, you must read back all instructions but not information
+● VFR Traffic Pattern
+○ It is important to note, this applies for VFR pilots only.
+○ When cleared to enter the pattern, the controller should give you an entrance
+command, it will usually be either enter on the downwind, or the base leg
+○ While this diagram shows a left pattern, which is the standard, you must follow
+commands from ATC. This includes flying a right pattern, which is the exact
+same, except making right turns  
+
+
+Flying under FAA Phraseology
+Before we begin talking about basic FAA phraseology, we need to talk about where FAA
+phraseology is used in Aeronautica!
+FAA phraseology is used in the, primarily United States-based, Oconian Islands, Alavega (South America), and Aesir (Canada). For those that are veterans of AeroATC, you recognize this as the former Oconia and Nav divisions. Major airports include Clarence, Norman, Tikaranto and Cantaloa.
+
+To help you in your ATC Journey, we’ve provided some basic examples of FAA phraseology,
+their definitions, and when they’re used. Please reference the phraseology table below.
+Standard Units
+● Speed : Knots (kt)
+● Attitude : Feet (ft)
+● Distance : Nautical Miles (NM)
+● Visibility : (SM)
+● Pressure : Inches of Mercury (Hg)
+● Temperature : Celsius (℃)
+
+
+Important Keywords
+
+
+Airport Traffic Pattern - The specified path to be flown by aircraft operating in the vicinity of an
+airport, normally flown by VFR aircraft
+
+
+Airway - A control area or portion thereof established in the form of a corridor.
+
+
+Decision altitude (DA) / decision height (DH) - A specified altitude or height in a 3D instrument
+approach operation at which a missed approach must be initiated if the required visual
+reference to continue the approach has not been established
+
+
+Flight information region (FIR) - An airspace of defined dimensions within which flight
+information service and alerting service are provided.
+
+
+Meteorological report (METAR) - A statement of observed meteorological conditions related to
+a specified time and location.
+
+
+Hold -  A specific path to fly a racetrack pattern over in order to further separate traffic, normally
+over a fix
+
+
+Fix - A navigational aid to pilots, can be found on the IFR Low and IFR High charts
+VOR Very high Omnidirectional Radio Range, A very specific point (the pink squares on the
+map) that is a ground based Navigational Aid (NAVAID) for pilots to be able to pinpoint their
+location, and for controllers to give precise points for the pilot to fly to
+
+
+Notice to airmen (NOTAM) -  A notice distributed by means of telecommunication containing
+information concerning the establishment, condition or change in any aeronautical facility,
+service, procedure or hazard, the timely knowledge of which is essential to personnel concerned
+with flight operations.
+
+
+Standard instrument arrival (STAR) -  A designated instrument flight rule (IFR) arrival route
+linking a significant point, normally on an ATS route, with a point from which a published
+instrument approach procedure can be commenced.
+
+
+Standard instrument departure (SID) - A designated instrument flight rule (IFR) departure route
+linking the aerodrome or a specified runway of the aerodrome with a specified significant point,
+normally on a designated ATS route, at which the en-route phase of a flight commences.
+
+
+Transition altitude -  The altitude at or below which the vertical position of an aircraft is
+controlled by reference to altitudes instead of flight levels. Under FAA this is always 18,000
+(FL180)
+
+
+Vectoring -  Provision of navigational guidance to aircraft in the form of specific headings,
+altitude and airspeed restrictions from Air Traffic Control
+Missed/Missed Approach The path the pilot should fly in the event they are an IFR go-around
+
+
+Go Around - Simply re-attempting a landing, rather than forcing it
+
+Flying under ICAO Phraseology
+
+
+Before discussing how to use ICAO phraseology, we must discuss where to use it.
+ICAO phraseology is used in Kyokkou (Asia), and Leovetsk (Russia).
+
+
+Standard units
+● Speed* : Knots (kt)
+● Attitude** : Feet (ft)
+● Distance*** : Nautical Miles (NM)
+● Visibility : Kilometers (km)
+● Pressure^ : Hectopascals (hPa)
+● Temperature : Celsius (℃)
+* In China and Russia, unit for speed is meters per second (m/s) or kilometers per hour (km/h)
+** In China and Russia,unit for attitude is meters (m)
+*** In China and Russia, unit for distance is kilometers (km)
+^ In Japan, unit for pressure is inches of mercury (inhg), but hPa can be used if pilot prefer
+
+
+
+
+Important Keywords:
+
+
+Aerodrome traffic circuit -  The specified path to be flown by aircraft operating in the vicinity of
+an aerodrome.
+Airway - A control area or portion thereof established in the form of a corridor.
+Decision altitude (DA) / decision height (DH) - A specified altitude or height in a 3D instrument
+approach operation at which a missed approach must be initiated if the required visual
+reference to continue the approach has not been established.
+Flight information region (FIR) - An airspace of defined dimensions within which flight
+information service and alerting service are provided.
+Meteorological report (METAR) - A statement of observed meteorological conditions related to
+a specified time and location.
+Notice to airmen (NOTAM) - A notice distributed by means of telecommunication containing
+information concerning the establishment, condition or change in any aeronautical facility,
+service, procedure or hazard, the timely knowledge of which is essential to personnel concerned
+with flight operations.
+Standard instrument arrival (STAR) - A designated instrument flight rule (IFR) arrival route
+linking a significant point, normally on an ATS route, with a point from which a published
+instrument approach procedure can be commenced.
+Standard instrument departure (SID) - A designated instrument flight rule (IFR) departure
+route linking the aerodrome or a specified runway of the aerodrome with a specified significant
+point, normally on a designated ATS route, at which the en-route phase of a flight commences.
+Transition altitude - The altitude at or below which the vertical position of an aircraft is
+controlled by reference to altitudes instead of flight levels.
+Transition level. The lowest flight level available for use above the transition altitude.
+Vectoring. Provision of navigational guidance to aircraft in the form of specific headings, based
+on the use of an ATS surveillance system.
+
+Flying under CAA Phraseology
+Before diving into CAA pilot phraseology, let’s familiarise ourselves on where it is used! 
+CAA phraseology in Aeronautica is utilised in the Avalon (Europe) and Enoksen (Arctic) regions of the map. 
+
+Standard Units in CAA include:

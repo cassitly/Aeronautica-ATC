@@ -1,0 +1,20 @@
+{
+  "name": "aeronautica-atc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Cassitly",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "fs": "^0.0.1-security",
+    "groq-sdk": "^0.19.0",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7"
+  }
+}

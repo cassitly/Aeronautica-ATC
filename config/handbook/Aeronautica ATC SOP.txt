@@ -1,0 +1,531 @@
+﻿ASOP   
+  
+
+
+
+Aeronautica ATC Standard Operating Procedures
+
+
+Version 1.1
+Last Updated: January 23rd, 2025
+Made & Formatted by KingFish155
+TABLE OF CONTENTS
+
+
+TABLE OF CONTENTS        2
+LATEST AMENDMENTS        3
+1.0 Operations        4
+1.1 Separation Minima        4
+1.2 Regions        4
+1.3 Units and Phraseology        5
+1.4 ATIS Creation        5
+1.5 Handoff and Control Boundaries        9
+1.6 Altitude Assignments        10
+1.7 IFR Clearance Readback Requirement        10
+1.8 SID/STAR Policy        10
+1.9 Realistic Frequencies/Identifiers        11
+1.10 Special Flight Operations        11
+1.11 Chart Development        12
+1.12 ATC Training & Rank Certification        13
+2.0 Events        14
+2.1 Event Guidelines        14
+2.2 Pings        14
+3.0 Moderation        15
+3.1 Standard Guidelines        15
+3.2 Warnings        15
+3.3 Stikes        15
+4.0 Administrative        17
+4.1 Aeronautica ATC Staff        17
+4.2 ASOP Amendments        17
+4.3 Document Hierarchy        18
+4.4 References        18
+
+
+
+________________
+
+
+LATEST AMENDMENTS
+* 1.4 ATIS Creation
+   * ATIS Format Updated
+
+
+NOTE: All new changes in this document are underlined except for simple grammatical and formatting corrections.
+
+
+DISCLAIMER: Any removals from this SOP shall be shown with a strikethrough and will be visible for at least one week past the amendment date listed on page one of this SOP. Once one week passes, all strikethroughs may be removed to make this document easier to read.
+________________
+1.0 Operations
+1.1 Separation Minima
+Minimum radar separation minima shall be three (3) nautical miles below 18,000ft MSL (FL180) and five (5) nautical miles at or above 18,000ft MSL.
+
+
+Other types of separation may be used in lieu of radar separation as permitted within each region’s minimum separation standards.
+1.2 Regions
+Aeronautica ATC has established the following regions, categorized into separate Flight Information Regions (FIRs):
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+Each FIR shall use the following foundational ATC policies and procedures:
+
+
+FIR
+	Regions
+	Real-Life ATC Foundational Procedure Source
+	FAA
+	Oconia, Aesir, Alavega
+	Federal Aviation Administration (United States)
+	ICAO
+	Kyokkou, Leovetsk
+	International Civil Aviation Organization (ICAO)
+	CAA
+	Avalon, Enoksen
+	Civil Aviation Authority/NATS (United Kingdom)
+	
+ATC procedures (including separation minima and phraseology) for each FIR shall be modeled and based on ATC procedures of the above mentioned foundational sources.
+
+
+1.3 Units and Phraseology
+Terminology and phraseology for each FIR shall be based on the following documents:
+
+
+FIR
+	Document
+	Publisher
+	FAA
+	JO 7110.65 - Air Traffic Control
+	Federal Aviation Administration 
+	ICAO
+	Annex 11 - Air Traffic Services
+	International Civil Aviation Organization 
+	CAA
+	CAP 493: Manual of Air Traffic Services
+	Civil Aviation Authority
+	
+Controllers shall not deviate from standard units and phraseology within each FIR to assist pilots.
+
+The following units shall be used regardless of FIR requirements:
+- Altitude: Feet (ft)
+- Distance: Nautical Mile (nm)
+- Speed Knot (kt)
+- Vertical Speed: Feet per minute (ft/min)
+1.4 ATIS Creation
+For each airport staffed by an S1, S1+, S2, or S3 controller, an Automated Terminal Information System (ATIS) report shall be made. If a single airport is staffed by multiple controllers, the highest position up to S2 shall be responsible for creating the ATIS report. For airports with only S3 coverage, the Approach/Departure controller shall make an abbreviated ATIS.
+
+
+EXAMPLE: If KCIA Tower and KCIA Ground are both online, KCIA Tower shall create the ATIS.
+
+
+The controller creating the ATIS shall coordinate with the Approach/Departure (or C1) controller on runway assignments and the advertised type of approach to be used at the airport prior to creating the ATIS if online.
+
+
+At each airport, the Tower controller shall set which runways will be in use and the S3/C1 controller shall set the advertised approach for each landing runway. If there is no S3/C1 controller online, the visual approach shall be advertised on the ATIS to all landing runways.
+
+
+ATIS FORMAT: 
+
+CAA:
+
+[AIRPORT IDENTIFIER] ATIS INFO [ATIS LETTER] TIME [TIME IN UTC]
+DEP RWY [DEPARTURE RUNWAY] ARR RWY [ARRIVAL RUNWAY] OR RUNWAY [RUNWAY NUMBER] IN USE
+[WIND] [VISIBILITY] [CLOUD LAYER(S)] [TEMPERATURE/DEW POINT] [QNH]
+TRANSITION LEVEL [X]
+ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS LETTER]
+AND ADVISE AFCT TYPE ON FIRST CONTACT WITH [AIRPORT NAME]
+[TEXT PILOT INSTRUCTIONS | PDC AVAILABILITY]
+SERVER CODE [Y]
+
+
+CAA Example:
+
+EDSA ATIS INFO B TIME 1054Z
+DEP RWY 15L ARR RWY 15R
+12025KT 10SM FEW100 10/03 Q1009
+TRANSITION LEVEL FL70
+ACKNOWLEDGE RECEIPT OF INFORMATION B
+AND ADVISE AFCT TYPE ON FIRST CONTACT WITH EDSA
+TEXT PILOTS USE #text-pilots | PDC AVAILABLE
+SERVER CODE: 8A7GUF
+
+
+________________
+FAA:
+
+
+[AIRPORT IDENTIFIER] ATIS INFO [ATIS LETTER] [TIME IN UTC]
+[WIND] [VISIBILITY] [CLOUD LAYER(S)] [TEMPERATURE/DEW POINT] [ALTIMETER]
+[APPROACH (VISUAL, ILS, RNAV = GPS, VOR)] APCH [RUNWAY] IN USE (ONLY STATE ONE TYPE OF APCH)
+DEP [RWY] (ONLY STATE IF DEPARTURE-ONLY RUNWAY IS DIFFERENT FROM APPROACH RUNWAY)
+READBACK ALL RUNWAY HOLD SHORT INSTRUCTIONS
+CONTACT [POSITION] ON [FREQUENCY] FOR [“CLNC” OR “CLNC AND TAXI INSTRUCTIONS”]
+[TEXT PILOT INSTRUCTIONS | PDC AVAILABILITY]
+SERVER CODE [Y]
+…ADVIS YOU HAVE [ATIS LETTER]
+
+
+FAA Example:
+
+KCIA ATIS INFO A 1054Z
+23005KT 10SM FEW100 FEW250 11/04 A2993
+VISUAL APCH 36, 27 IN USE
+READBACK ALL RWY HOLD SHORT INSTRUCTIONS
+CONTACT GND ON 121.7 FOR CLNC AND TAXI INSTRUCTIONS
+TEXT PILOTS USE #text-pilots | PDC UNAVAILABLE
+SERVER CODE FISH22
+…ADVS YOU HAVE A
+
+ICAO:
+
+[AIRPORT IDENTIFIER] ATIS [ATIS LETTER] [TIME IN UTC]
+DEPARTURES [DEPARTURE RWY(S)]. ARRIVALS [ARRIVAL RWY(S)]
+EXP [APPROACH] APCH.
+WIND [WIND] VIS [VISIBILITY] CLD [CLOUD LAYER(S)] T[TEMPERATURE]  D[DEW POINT] QNH [QNH]
+[TEXT PILOT INSTRUCTIONS | PDC AVAILABILITY]
+SERVER CODE [Y]
+ACKNOWLEDGE INFO [ATIS LETTER] ON FIRST CTC WITH APP OR DEL
+
+ICAO Example:
+
+VHAL ATIS C 1054Z
+DEPARTURES 18. ARRIVALS 18
+EXP VISUAL APCH
+WIND 18003KT VIS 10KM CLD FEW 5000FT  T13 DP05 QNH 1009
+TEXT PILOTS USE #text-pilots & PING | PDC UNAVAILABLE
+SERVER CODE: 439FUS
+ACKNOWLEDGE INFO C ON FIRST CTC WITH APP OR DEL
+________________
+CENTER/CONTROL ADVISORY (FOR C1 USE ONLY):
+
+# MAJOR AIRPORT INFORMATION
+[ATIS for up to two major airports] (omit airports online by other controllers)
+
+## SPECIAL OPERATIONS
+[SPECIAL OPERATIONS]
+
+
+[TEXT PILOT INSTRUCTIONS | PDC AVAILABILITY]
+SERVER CODE [Y]
+
+Center/Control Advisory Example:
+
+# OCONIA CENTER ADVISORY
+## MAJOR AIRPORT INFORMATION
+KCIA ATIS INFO A 1054Z
+23005KT 10SM FEW100 FEW250 11/04 A2993
+VISUAL APCH 36, 27 IN USE
+READBACK ALL RWY HOLD SHORT INSTRUCTIONS
+CONTACT GND ON 121.7 FOR CLNC AND TAXI INSTRUCTIONS
+TEXT PILOTS USE #text-pilots | PDC UNAVAILABLE
+SERVER CODE FISH22
+…ADVS YOU HAVE A
+
+## SPECIAL OPERATIONS
+BULL MOA ACTIVE FOR AERIAL REFUELING OPERATIONS FROM 030 UP TO BUT NOT INCLUDING FL180.
+
+
+TEXT PILOTS USE #text-pilots & PING | PDC UNAVAILABLE
+SERVER CODE FCC3356
+
+________________
+1.5 Handoff and Control Boundaries
+
+
+Controller Handoffs shall happen within the following points unless otherwise coordinated between controllers during an event/session:
+
+Terms:
+DEL = Clearance Delivery | GND = Ground Control | TWR = Tower | DEP = Departure | APP = Approach | CTR = Center/Area Control
+
+
+Handoff
+	Departure
+	Arrival
+	DEL-GND
+	Once CD receives a correct readback of the clearance, CD shall advise the aircraft to contact GND for push and start.
+	N/A
+	GND-TWR
+	Aircraft shall switch to TWR automatically when holding short of the active runway.
+	TWR shall switch the aircraft to GND when the aircraft clears the runway.
+	TWR-DEP/APP
+	TWR shall hand off a departing aircraft to departure once airborne and clear of all potential conflict. Handoff should occur within 5NM of the departure end of the runway.
+	APP shall hand off the aircraft to TWR when the aircraft is cleared AND established on the approach or within 5NM of the runway threshold, whichever occurs first.
+	DEP/APP-CTR
+	No less than 2NM of DEP’s boundary or before leaving DEP’s vertical boundary*.
+	No less than 2NM of the boundary or entering APP’s vertical boundary*.
+	*Note - Controllers cannot give altitude assignments that will enter another controller’s airspace.
+
+
+________________
+1.6 Altitude Assignments
+
+
+Altitude assignments shall be as follows:
+
+
+
+	East Bearing (360-179)
+	West Bearing (180-359)
+	IFR Above 3,000ft
+	Odd Altitudes 
+Example: 5,000, 7,000, 9,000
+	Even Altitudes 
+Example: 4,000, 6,000, 8,000
+	VFR Above 3,000ft 
+	Odd Altitudes + 500ft
+Example: 5,500, 7,500, 9,500
+	Even Altitudes + 500ft 
+Example: 4,500, 6,500, 8,500
+	VFR AOB 3,000ft
+	Any Altitude
+	Any Altitude
+	IFR AOB 3,000ft
+	Any altitude above the MSA/MVA
+	Any altitude above the MSA/MVA
+	
+Temporary incorrect altitude assignments are permitted to ensure separation of traffic as long as the aircraft is returned to a correct altitude assignment before being handed-off to the next controller.
+
+
+For departing aircraft, initial altitude shall be 5,000ft unless otherwise coordinated with the appropriate departure/center/area-control controller. If no departure/center/area-controllers are online, departing aircraft shall be cleared to their requested altitude.
+1.7 IFR Clearance Readback Requirement
+
+
+Pilots may read back IFR clearances either in its entirety or by only responding with the correct squawk code. If a pilot responds with only the correct squawk code, the controller must not require the pilot to readback the entire clearance.
+
+Controllers may add additional guidance or assist with full readback of a clearance for a pilot if:
+- The pilot requests it.
+- The request will not cause undue delay of other aircraft. 
+
+
+1.8 SID/STAR Policy
+
+
+A pilot may only fly a SID/STAR if the procedure is on the pilot’s submitted flight plan and has received clearance through ATC either directly or through a departure clearance.
+
+A controller may assign an aircraft to a SID/STAR as long as the additional procedure does not add undue delay to the aircraft.
+
+If a pilot does not wish to fly a SID or STAR, the pilot must put “NO SID”, “NO STAR” or “NO SID AND STAR” to the remark section of their flight plan. If the pilot has this in the remarks section of their flight plan, controllers cannot assign a SID/STAR to that pilot.
+1.9 Realistic Frequencies/Identifiers
+Realistic identifiers used by controllers (Example: “Heathrow Tower” for Anhedral) is permitted under the following conditions:
+        - ATIS report includes the in-game name of the controlling airport.
+        - Pilots within airspace understand what the in-game airport is.
+        - The frequency of the control position remains the same per the Aero ATC published charts.
+        - Pilots are permitted to still use the in-game name if requested.
+        - The in-discord frequency remains under the same name as per Aeronautica airport names.
+1.10 Special Flight Operations
+
+
+FLIGHT INSPECTION SERVICE - “FLIGHT CHECK”
+
+The Flight Inspection Service is a group of controllers and pilots authorized to conduct inspections of in-game landing systems, ensure accuracy of NOTAMs, testing of SIDs/STARs, and verify the integrity of published charts after game updates. Flight Check also tests proposed airways, approaches, SIDs, STARs, and other procedures for the Chart Development Team before implementation.
+
+Flight Check aircraft shall be identified with the callsign “FLIGHT CHECK” followed by a two digit number assigned to each controller/pilot in the authorized Flight Check livery. Flight Check shall file flight plans with “FLC” plus their two digit number as their callsign (Ex: FLC22).
+
+Flight Check aircraft may request to test equipment/procedures that differ from ongoing operations (Example: ILS test of RWY18 while RWY36 is in use). These requests shall be honored by controllers as soon as practical unless traffic conditions do not permit. Flight Check pilots shall accommodate as much as practical to prevent undue delay of normal operations.
+
+The Flight Inspection Service is managed by the Training Manager in collaboration with the Chart Development Manager. All Flight Check pilots must be approved by the Training Manager. Unauthorized Flight Check operations shall result in moderation action determined by the Moderation Director.
+
+
+
+MILITARY OPERATIONS
+
+Military operations include any aircraft primarily used by any military worldwide. This must be current aircraft, and does not include warbirds, or other retired aircraft unless used in any active military. Military operations shall not be conducted during controller training sessions and evaluations.
+
+“Hot Scrambles”  shall only be permitted during specific events authorized by the Operations Director. When “hot scrambles” are authorized during an event, controllers in the event shall be notified of the authorization in the event briefing. Non-authorized “hot scrambles” shall result in moderation action determined by the Moderation Director.
+
+Intercepts shall only be permitted during specific events authorized by the Operations Director. Non-authorized intercepts shall result in moderation action determined by the Moderation Director.
+
+Aerial Refueling operations shall only be conducted within the following authorized areas:
+
+FIR
+	Permitted Area(s)
+	FAA
+	Military Operation Areas (MOAs) Only (3,000ft  to 17,999ft MSL)
+	ICAO
+	NONE
+	CAA
+	TRA001
+	
+
+Aerial refueling operations will not be controlled by ATC within permitted areas. ATC services shall resume upon completion of aerial refueling operations and outside of the permitted area. ATC shall ensure separation of non-participating aircraft from the permitted area. Participating aircraft within the permitted area are responsible for their own separation. Pilots must notify ATC when aerial refueling operations are being conducted and of their completion. 
+
+Non-participating aircraft shall be separated at least 3nm laterally and/or 2,000ft vertically from permitted area boundaries during ongoing aerial refueling operations.
+
+1.11 Chart Development
+
+
+FLIGHT INFORMATION REGION SPECIFIC CHARTS
+* All regions within Aero ATC (FAA, CAA, ICAO) shall have their own style of chart as per real life chart examples.
+* Chart Developers may create universal style charts (Jeppesen) at their own discretion, though national styled charts are preferred.
+
+
+REGION RESTRICTIONS
+* Until out of the probationary period chart developers may only create charts for their primary FIR. 
+* Airfield charts, SIDs and STARs may not utilize incorrect style of chart per FIR, (Example, Tikaranto charts, plates, may not be created under a NAVCAN style of chart as CTIK is under the FAA FIR).
+* FIR style charts may not be created for airfields outside of that specific FIR (Example Clarence must not be done in CAA style charts).
+
+
+CHART REQUIREMENTS
+* Airfields with completed charts (ground, approach, arrival, departure) must not have those charts redesigned unless, 
+   * The chart poses a threat to aircraft (incorrectly designed chart for terrain)
+   * The chart is grossly out of date (Updated airfield or terrain).
+* Airfield redesign charts must be done with the approval of the Operations Director or the Chart Manager.
+
+
+1.12 ATC Training & Rank Certification
+ATC training and certification of ranks shall be in accordance with the Aeronautica ATC Training SOP (See 4.4 References).
+________________
+2.0 Events
+2.1 Event Guidelines
+Event guidelines shall be in accordance with the Aeronautica ATC Event SOP (See 4.4 References).
+2.2 Pings
+
+
+ATC ONLINE PINGS
+
+ATC Online ping shall only be used under the following conditions:
+
+
+Rank
+	ATC Online
+	Evaluation
+	Training
+	C1
+	Ping Allowed
+	Ping Allowed
+	Ping Allowed
+	S3
+	Ping Allowed
+	Ping Allowed
+	Ping Allowed
+	S2
+	2 S2s or S2 & S1+ Online
+	Ping Allowed
+	No Ping Allowed
+	S1+
+	No Ping Allowed
+	Ping Allowed
+	No Ping Allowed
+	S1
+	No Ping Allowed
+	No Ping Allowed
+	No Ping Allowed
+	
+
+
+
+
+
+
+
+________________
+3.0 Moderation
+3.1 Standard Guidelines
+* Moderators shall not escalate any situations.
+* Moderators are part of a third-party review system and shall conduct themselves as such.
+* Communication from moderators regarding moderation action should be clear, concise, and professional.
+* Cross-banning shall be done with partnered servers.
+3.2 Warnings
+Warnings should be administered for small infractions of Discord, server, and ASOP policies that do not require moderation action but should be discouraged (Example: Chat Spamming).
+
+Warnings must include the Moderator’s name and the reason for the action. Warnings involving a timeout shall include the duration of the timeout in the warning reason. Timeout warnings must not exceed 24 hours.
+
+Procedures for Administering a Warning:
+1. Decide on moderation action if needed.
+2. If moderation action is needed, document action taken and administer a warning through Dyno.
+3. Check user’s moderator history for previous moderation actions that could indicate repeated behavior.
+4. If repeated behavior, a strike should be considered at the Moderator’s discretion.
+
+The following information shall be documented in the Dyno warning when issued:
+- Incident Summary
+- Moderation Action used (if taken)
+- Whether this incident is a repeat occurrence.
+3.3 Strikes        
+Aeronautica ATC moderation utilizes a three strike system. Community members accumulating three strikes shall be permanently banned from the Discord server.
+
+Strikes are administered as a serious moderation action and require the Strike Process (see below) to be utilized. 
+
+When a Moderator administers a strike, moderation action such as long-term timeout or removal of channel access are authorized at the Moderator’s discretion. Temporary and permanent bans require approval of the Moderation Director or a Senior Moderator. If either are not available within a reasonable amount of time, the Community Ambassador may approve the request.
+
+Procedures for Administering a Strike:
+1. Open a moderation ticket, assign the user, and mute the user.
+2. State the reason for the strike, the strike number, and administer the strike via warning through Dyno
+3. Close the ticket and administer appropriate moderation action listed in the strike process.
+
+The following information must be listed in the moderation ticket for a strike before the ticket is closed:
+- Strike Number
+- Incident Summary
+- Ticket Number
+- Moderator Name
+- Date of Moderation Action
+
+All strikes shall also be counted as a warning, however warnings do not count as a strike unless otherwise stated by the Moderation Director.
+
+STRIKE PROCESS
+Strike 1: Warning and a 24 hour mute.
+Strike 2: Warning and a temporary ban not to exceed 14 days.
+Strike 3: Permanent Ban
+
+Permanent Bans may be appealed depending on severity. Ban appeals shall only be read by a Senior Moderator or the Moderation Director. The Community Ambassador may read the appeal if the other parties are not available.
+
+
+________________
+4.0 Administrative        
+4.1 Aeronautica ATC Staff        
+Members of the Aeronautica ATC Staff shall include the following positions:
+
+
+
+	Directors
+	Managers
+	Staff
+	Community Ambassador
+	Event Director
+Moderation Director
+Operations Director
+	Chart Manager
+Event Manager
+Training Manager
+Senior Moderator
+	Chart Designer
+Event Host
+Instructor
+Lead Instructor
+Moderator
+Training Evaluator
+Quality Assurance Officer
+	
+
+The quorum for Aeronautica ATC Staff meetings shall be at least half of the active Aeronautica ATC Staff or 3/4 of RSVP’d attendees if published at least one month in advance. The list of RSVP’d attendees shall be documented 24 hours prior to the start of the meeting. If quorum cannot be reached, no official business shall be voted and enacted during the meeting unless a quorum is present. Staff members on a Leave of Absence (LOA) shall not be counted towards this total.
+
+
+Probationary staff members (i.e. probationary event hosts, chart designers, instructors) may attend staff meetings but do not have the ability to vote in staff meetings and are not counted towards staff meeting quorum requirements.
+4.2 ASOP Amendments
+Amendments to this SOP may be proposed by any member of the community. 
+
+
+Amendments from non-staff members shall be considered if a proposed amendment has at least 25 supporters through a suggestion post. Once a proposed amendment has 25 supporters, the amendment shall be voted on by the Aeronautica ATC Staff at the next regularly scheduled staff meeting. 
+
+Amendments proposed by Aeronautica ATC staff shall be considered if approved by their respective Director. Approved proposed amendments shall be considered at the next regularly scheduled Aeronautica ATC staff meeting.
+
+After a proposed amendment is considered during a regularly scheduled staff meeting, the proposed amendment shall be voted upon by a poll accessible to all voting members. The poll shall be titled with the proposed amendment with the two poll options being “Yes” and “No”. Attached to the poll shall be the voice recording of the staff meeting the proposed amendment was considered at. The poll shall be made immediately following the staff meeting and remain open for a period of one week.
+
+
+All proposed amendments to this SOP require a ⅔ positive vote for ratification. If a proposed amendment fails, the motion cannot in its original format, be re-introduced for at least two months.
+
+
+4.3 Document Hierarchy
+In any case where this SOP and any other documents mentioned (ESOP & TSOP) conflict, this SOP shall be followed and adhered to and the mentioned documents shall be amended to not conflict with this SOP.
+4.4 References
+* Aeronautica ATC Event SOP (ESOP)
+* Aeronautica ATC Training SOP (TSOP)
+Version 1.1                                                                Last Updated: Jan. 23, 2025
