@@ -1,20 +1,21 @@
-const { Client } = require('discord.js');
 const Service = require('./service');
-const { Groq } = require('groq-sdk')
 const { createInterface } = require('node:readline');
+
+const app = new Service();
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const { Client } = require('discord.js');
+const { Groq } = require('groq-sdk')
 const spawn = require('child_process').spawn
 const prism = require('prism-media');
 const ffmpeg = require('ffmpeg-static');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource, getVoiceConnection, AudioPlayerStatus } = require('@discordjs/voice')
 const axios = require('axios')
 const fs = require('fs')
-
-const app = new Service();
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 
 async function discord() {
     const client = new Client({ intents: ["Guilds", "GuildMessages", "DirectMessages", "MessageContent", "GuildVoiceStates"] });
@@ -245,6 +246,8 @@ async function handleSubcommand(type) {
 function question(query) {
     return new Promise(resolve => rl.question(query, resolve));
 }
+
+module.exports = app;
 
 setTimeout(() => {
     promptMain();
