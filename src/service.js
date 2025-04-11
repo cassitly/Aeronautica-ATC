@@ -1,5 +1,4 @@
 require('dotenv').config({ path: './config/.env' });
-const fetch = require('node-fetch').default;
 const { Groq } = require('groq-sdk');
 const path = require('path');
 const fs = require('fs');

@@ -80,7 +80,7 @@ async function discord() {
     
             const oggStream = new prism.opus.Decoder({ rate: 48000, channels: 2, frameSize: 960 });
     
-            const outputFile = `./config/audio_${userId}.pcm`;
+            const outputFile = `./output/data/audio_${userId}.pcm`;
             if (fs.existsSync(outputFile)) fs.unlinkSync(outputFile);
             const writeStream = fs.createWriteStream(outputFile);
             audioStream.pipe(oggStream).pipe(writeStream);
@@ -90,7 +90,7 @@ async function discord() {
             writeStream.end();
     
             // Convert PCM to WAV
-            const wavOutput = `./config/audio_${userId}.wav`;
+            const wavOutput = `./output/data/audio_${userId}.wav`;
             if (fs.existsSync(wavOutput)) fs.unlinkSync(wavOutput);
     
             await new Promise(resolve => {
@@ -246,8 +246,6 @@ async function handleSubcommand(type) {
 function question(query) {
     return new Promise(resolve => rl.question(query, resolve));
 }
-
-module.exports = app;
 
 setTimeout(() => {
     promptMain();
